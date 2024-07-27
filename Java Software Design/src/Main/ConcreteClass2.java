@@ -1,8 +1,16 @@
 package Main;
 
-public class ConcreteClass2 extends ConcreteClass1 
-{
-    private int password = 4321;
+public class ConcreteClass2 extends ConcreteClass1 {
 
-   
+    public ConcreteClass2()
+
+    {
+
+    }
+
+    public ConcreteClass2(int password)
+
+    {
+        super(password);
+    }
 }

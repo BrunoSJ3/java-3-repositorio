@@ -17,12 +17,22 @@ public class MainTester
 
         System.out.println("Fim do roteiro 1");
         System.out.println("--------------------------");
+
         // -----------------------------------------
 
         System.out.println("inicio do roteiro 2");
 
         AbstractClass ac1 = new ConcreteClass();
         ConcreteClass cc3 = new ConcreteClass();
+
+        System.out.println("fim do roteiro 2");
+        System.out.println("--------------------------");
+
+        // ------------------------------------------
+
+        System.out.println("inicio do roteiro 4");
+        System.out.println(ac1.INTERFACE_VAR);
+        ac1.interfaceMethod1();
 
     }
 }

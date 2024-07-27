@@ -3,10 +3,24 @@ package Samples.Animal;
 public class Shark extends Fish
 
 {
-    // properties
+    // specific properties
     private int numverOfFins;
 
-    // behaviors
+    // constructors
+    public Shark()
+
+    {
+
+    }
+
+    public Shark(String scentificName, String PopularName, int age, Double mass, int numverOfFins)
+
+    {
+        super(scentificName, PopularName, age, mass);
+        this.numverOfFins = numverOfFins;
+    }
+
+    // specific behaviors
     @Override
     public void born() {
         System.out.println("Animal Nascendo");
@@ -40,6 +54,13 @@ public class Shark extends Fish
 
     public void setNumverOfFins(int numverOfFins) {
         this.numverOfFins = numverOfFins;
+    }
+
+    // Ambientes
+
+    @Override
+    public void swim() {
+        System.out.println("Tubarão nadando");
     }
 
 }

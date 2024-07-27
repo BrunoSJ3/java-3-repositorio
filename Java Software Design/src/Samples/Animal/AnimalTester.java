@@ -25,6 +25,7 @@ public class AnimalTester
         shark.eat();
         shark.grows();
         shark.reproduces();
+        shark.swim();
 
     }
 

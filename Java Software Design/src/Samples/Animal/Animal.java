@@ -9,36 +9,34 @@ public abstract class Animal
     private int age;
     private double mass;
 
+    // constructors
+    public Animal()
+
+    {
+
+    }
+
+    public Animal(String scientificName, String popularName) {
+        this.scentificName = scientificName;
+        this.popularName = popularName;
+    }
+
+    public Animal(String scientificName, String popularName, int age, double mass) {
+        this(scientificName, popularName);
+        this.age = age;
+        this.mass = mass;
+    }
+
     // behavious
     public abstract void born();
 
-    {
-
-    }
-
     public abstract void eat();
-
-    {
-        
-    }
 
     public abstract void grows();
 
-    {
-
-    }
-
     public abstract void reproduces();
 
-    {
-
-    }
-
     public abstract void die();
-
-    {
-
-    }
 
     // getters and setters
     public String getScentificName() {
