@@ -1,6 +1,5 @@
 package Samples.Animal;
 
-
 public class Frog extends Amphibiam {
 
     @Override
