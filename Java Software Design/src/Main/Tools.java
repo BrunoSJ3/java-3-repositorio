@@ -26,6 +26,12 @@ public class Tools
         System.out.println(numF);
     }
 
+    public static <T> void display(T info) // método genérico
+
+    {
+        System.out.println(info);
+    }
+
     public static double sum(double num1, double num2)
 
     {

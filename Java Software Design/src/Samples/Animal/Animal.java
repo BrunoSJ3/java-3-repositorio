@@ -71,4 +71,16 @@ public abstract class Animal
         this.mass = 250;
     }
 
+    // convertendo em ToString
+    @Override
+    public String toString()
+
+    {
+        String info = "Nome Científico = " + scentificName + "\nNome Popular = " + popularName + "\nIdade = " + age
+                + "\nMassa = "
+                + mass;
+
+        return info;
+    }
+
 }

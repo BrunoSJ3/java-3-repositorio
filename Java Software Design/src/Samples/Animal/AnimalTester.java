@@ -18,11 +18,16 @@ public class AnimalTester
          */
 
         Shark shark = new Shark("Galeocerdo cuvier", "tubarão tigre", 20, 250.0, 2);
+
         // puitter
-        System.out.println(shark.getScentificName());
-        System.out.println(shark.getPopularName());
-        System.out.println(shark.getAge());
-        System.out.println(shark.getMass());
+        /*
+         * System.out.println(shark.getScentificName());
+         * System.out.println(shark.getPopularName());
+         * System.out.println(shark.getAge());
+         * System.out.println(shark.getMass());
+         */
+
+        System.out.println(shark);
 
         shark.born();
         shark.die();
@@ -31,6 +36,11 @@ public class AnimalTester
         shark.reproduces();
         shark.swim();
 
+    }
+
+    @Override
+    public String toString() {
+        return "AnimalTester []";
     }
 
 }

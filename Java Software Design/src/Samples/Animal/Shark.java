@@ -16,8 +16,9 @@ public class Shark extends Fish
     public Shark(String scentificName, String PopularName, int age, Double mass, int numverOfFins)
 
     {
-        super(scentificName, PopularName, age, mass);
-        this.numverOfFins = numverOfFins;
+        super(scentificName, PopularName, age, mass); // referente as variáveis menos específicas, mais genéricas que
+                                                      // esta classe
+        this.numverOfFins = numverOfFins; // referente as variáveis específicas desta classe
     }
 
     // specific behaviors
@@ -59,8 +60,19 @@ public class Shark extends Fish
     // Ambientes
 
     @Override
-    public void swim() {
+    public void swim()
+
+    {
         System.out.println("Tubarão nadando");
+    }
+
+    @Override
+    public String toString()
+
+    {
+        String info = super.toString();
+        String subInfo = info + "\nQuantidade de nadadeiras = " + numverOfFins;
+        return subInfo;
     }
 
 }
