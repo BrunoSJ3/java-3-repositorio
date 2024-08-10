@@ -3,9 +3,11 @@ package Auxiliary;
 
 import javax.tools.Tool;
 
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.Executors;
 
 /* 
 import Main.AbstractClass;
@@ -67,22 +69,20 @@ public class AuxiliaryTester {
         // ---------------------------------------------------
         System.out.println("Início do roteiro 6");
 
-        /*
-         * Tools t01 = new Tools();
-         * Tools t02 = new Tools();
-         * 
-         * t01.option = 'B';
-         * t02.option = 'C'; // o static tornou uma variável de classe, e não uma
-         * variável de instância
-         * 
-         * System.out.println(t01.option);
-         * System.out.println(t02.option);
-         */
-        /*
-         * Tools.option = 'D';
-         * // System.out.println(Tools.option);
-         * Tools.printOption();
-         */
+        Tools t01 = new Tools();
+        Tools t02 = new Tools();
+
+        t01.option = 'B';
+        t02.option = 'C'; // o static tornou uma variável de classe, e não uma
+        // variável de instância
+
+        System.out.println(t01.option);
+        System.out.println(t02.option);
+
+        Tools.option = 'D';
+        // System.out.println(Tools.option);
+        Tools.printOption();
+        Tools.printOption();
 
         Tools.display(24.5f);
 
@@ -205,5 +205,33 @@ public class AuxiliaryTester {
         gc3.setDescription("Um texto qualquer");
         System.out.println(gc3.getPassword());
         System.out.println(gc3.getDescription());
+
+        System.out.println("fim do roteiro 11");
+        System.out.println("------------------------");
+        // -----------------------------------------
+        System.out.println("Início do roteiro 12");
+
+        Character char1 = 'a';
+        Tools.display(char1);
+
+        Method[] methods = Tools.class.getDeclaredMethods(); // método de reflexção
+
+        for (Method temp : methods) {
+            // este if é um método que precisa chamar os métodos
+            if (temp.isAnnotationPresent(Anotation1.class)) {
+                Anotation1 annotation = temp.getAnnotation(Anotation1.class);
+                System.out.println("Método Anotado: " + temp.getName());
+                System.out.println("Conteúdo da anotação: " + annotation.value());
+            }
+
+            // este não
+            if (temp.isAnnotationPresent(Anotation2.class))
+
+            {
+                System.out.println("Sou anotation2, e passei por aqui tbm!");
+                System.out.println();
+            }
+        }
+
     }
 }

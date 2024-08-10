@@ -20,6 +20,7 @@ public enum Enumeration
         value1 = 000;
         value2 = "Texto";
     }
+
     /*
      * private Enumeration(int value1, String value2)
      * 
