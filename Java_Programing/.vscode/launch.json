@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RegularExpressionExample",
+            "request": "launch",
+            "mainClass": "Section4_2.regularexpressionexample.RegularExpressionExample",
+            "projectName": "Java_Programing_6c02830e"
+        },
+        {
+            "type": "java",
+            "name": "StringBuilderDemo",
+            "request": "launch",
+            "mainClass": "Section4_1.stringbuildervsbuilder.StringBuilderDemo",
+            "projectName": "Java_Programing_6c02830e"
+        },
+        {
+            "type": "java",
+            "name": "StringVsBuilder",
+            "request": "launch",
+            "mainClass": "Section4_1.stringbuildervsbuilder.StringVsBuilder",
+            "projectName": "Java_Programing_6c02830e"
+        },
+        {
+            "type": "java",
+            "name": "StringExample",
+            "request": "launch",
+            "mainClass": "Section4_1.StringExample",
+            "projectName": "Java_Programing_6c02830e"
+        },
+        {
+            "type": "java",
+            "name": "SortExample",
+            "request": "launch",
+            "mainClass": "Section3_4.SortExample",
+            "projectName": "Java_Programing_6c02830e"
+        },
+        {
+            "type": "java",
+            "name": "StudentDriver",
+            "request": "launch",
+            "mainClass": "Section3_3.StudentDriver",
+            "projectName": "Java_Programing_6c02830e"
+        },
+        {
+            "type": "java",
             "name": "LettersStack",
             "request": "launch",
             "mainClass": "Section3_3.stackexample.LettersStack",

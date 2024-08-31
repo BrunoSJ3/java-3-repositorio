@@ -37,7 +37,9 @@ public class CoinDriver
     public static void displayWallet(HashSet<Coin> wallet)
 
     {
-        for (Coin arrTemp : wallet) {
+        for (Coin arrTemp : wallet)
+
+        {
             System.out.println(arrTemp.getDenomination());
         }
     }

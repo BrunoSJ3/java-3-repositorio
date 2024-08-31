@@ -14,7 +14,7 @@ public class AssertExample
         System.out.println("O número digitado é: " + num);
         sc.close();
 
-        assert num < 2_147_483_647; // facilita a leitura
+        assert num < 2_147_483_647; // facilita a leitura/ mas usado somente para testes
         int y = (int) num;
         System.out.println("O número transformado para inteiro é:" + y);
     }
