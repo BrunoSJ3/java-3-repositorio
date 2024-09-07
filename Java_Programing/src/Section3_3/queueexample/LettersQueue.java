@@ -9,9 +9,11 @@ public class LettersQueue
 
     {
         LinkedList<Character> lettersq = new LinkedList<>();
+        // Demonstra 'A' 1º na fila por que entrou 1º do que todos os outros
+        lettersq.add('A');// FILA - QUEUE entra primeiro na fila.
+        lettersq.add('B');// FILA - QUEUE entra segundo na fila.
 
-        lettersq.add('A');// FILA - QUEUE entra o primeiro
-        lettersq.add('B');// FILA - QUEUE entra o segundo mas é o primeiro na ordem na fila
+        // Demonstra 'C' 2º na Pilha, porque D fica acima de 'C'.
         lettersq.push('C');// PILHA - STACK/DEQUE (double ended queue) adiciona primeiro
         lettersq.push('D');// PILHA - STACK/DEQUE (double ended queue) adiciona segundo mas empurra o 1º
 

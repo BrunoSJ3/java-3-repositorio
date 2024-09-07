@@ -15,7 +15,9 @@ public class RoadBike extends Bicicle
     }
 
     public RoadBike(String code, String typeOfQuad, String typeOfWheel, int arch, int marchQuantity,
-            double velocityMedian, String pedalType) {
+            double velocityMedian, String pedalType)
+
+    {
         super(code, typeOfQuad, typeOfWheel, arch, marchQuantity, velocityMedian);
         this.pedalType = pedalType;
     }

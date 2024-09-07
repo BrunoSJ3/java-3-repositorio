@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HashmapExample",
+            "request": "launch",
+            "mainClass": "Section3_3.hashmapexample.HashmapExample",
+            "projectName": "Java_Programing_1b84af45"
+        },
+        {
+            "type": "java",
+            "name": "LettersQueue",
+            "request": "launch",
+            "mainClass": "Section3_3.queueexample.LettersQueue",
+            "projectName": "Java_Programing_1b84af45"
+        },
+        {
+            "type": "java",
+            "name": "GenericMethodDriver",
+            "request": "launch",
+            "mainClass": "Section3_1.wildcards.GenericMethodDriver",
+            "projectName": "Java_Programing_1b84af45"
+        },
+        {
+            "type": "java",
             "name": "RegularExpressionExample",
             "request": "launch",
             "mainClass": "Section4_2.regularexpressionexample.RegularExpressionExample",

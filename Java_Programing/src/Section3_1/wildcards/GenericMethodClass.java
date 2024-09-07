@@ -19,7 +19,8 @@ public class GenericMethodClass {
         System.out.println();
     }
 
-    public void displayArrayList(ArrayList<?> arrayList) // método CORINGA! por causa do ?, utiliza Object como variável
+    public void displayArrayList(ArrayList<?> arrayList) // método CORINGA!(wildcard) por causa do ?,
+                                                         // utiliza Object como variável
 
     {
         for (Object arrTemp : arrayList) {

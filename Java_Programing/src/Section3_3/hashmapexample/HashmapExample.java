@@ -19,6 +19,7 @@ public class HashmapExample
         fruitBowl.put("Qualquer", null);
         fruitBowl.put(null, "Qualquer");
 
+        
         System.out.println(fruitBowl);
 
         // for (String arrTemp : fruitBowl.keySet())
@@ -35,7 +36,6 @@ public class HashmapExample
         }
 
         findElement(fruitBowl, "Maçã");
-
     }
 
     private static void findElement(HashMap<String, String> fruitBowl, String fruit) {
@@ -47,3 +47,4 @@ public class HashmapExample
         }
     }
 }
+
