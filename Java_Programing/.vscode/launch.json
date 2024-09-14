@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RecursionExample",
+            "request": "launch",
+            "mainClass": "Section4_3.RecursionExample",
+            "projectName": "Java_Programing_6c02830e"
+        },
+        {
+            "type": "java",
+            "name": "RecursionTest",
+            "request": "launch",
+            "mainClass": "Section4_3.RecursionTest",
+            "projectName": "Java_Programing_6c02830e"
+        },
+        {
+            "type": "java",
+            "name": "PatternTest",
+            "request": "launch",
+            "mainClass": "Section4_2.PatternExample.PatternTest",
+            "projectName": "Java_Programing_6c02830e"
+        },
+        {
+            "type": "java",
             "name": "HashmapExample",
             "request": "launch",
             "mainClass": "Section3_3.hashmapexample.HashmapExample",
