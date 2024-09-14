@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FileHandling",
+            "request": "launch",
+            "mainClass": "Section5_1.filehandling.FileHandling",
+            "projectName": "Java_Programing_6c02830e"
+        },
+        {
+            "type": "java",
+            "name": "FileReading",
+            "request": "launch",
+            "mainClass": "Section5_1.filereading.FileReading",
+            "projectName": "Java_Programing_6c02830e"
+        },
+        {
+            "type": "java",
             "name": "RecursionExample",
             "request": "launch",
             "mainClass": "Section4_3.RecursionExample",
