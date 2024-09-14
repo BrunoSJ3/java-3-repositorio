@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PathDemo",
+            "request": "launch",
+            "mainClass": "Section5_1.PathDemo",
+            "projectName": "Java_Programing_6c02830e"
+        },
+        {
+            "type": "java",
             "name": "FileHandling",
             "request": "launch",
             "mainClass": "Section5_1.filehandling.FileHandling",

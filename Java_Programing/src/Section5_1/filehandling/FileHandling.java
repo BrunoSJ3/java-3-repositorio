@@ -21,6 +21,7 @@ public class FileHandling {
         readFile(Employeeslines);
         displayEmployees(Employeeslines);
         writeFile(Employeeslines);
+
     }
 
     public static void displayEmployees(ArrayList<String> employees)
@@ -37,7 +38,7 @@ public class FileHandling {
 
     {
         String line = "";
-        Path path = Paths.get("C:/javaprograming/employees.txt");
+        Path path = Paths.get("C:\\javaprograming\\employees.txt");
 
         try {
             BufferedReader fileInput = Files.newBufferedReader(path, Charset.forName("UTF-8"));
@@ -76,5 +77,4 @@ public class FileHandling {
             System.exit(0); // para de tentar gravar
         }
     }
-
 }
